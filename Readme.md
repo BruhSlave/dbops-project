@@ -21,13 +21,21 @@ GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO store_user;
 
  date_created |  sum
 |------|---------:|
-| 14.02.2026 | 936,389 |
-| 15.02.2026 | 948,436 |
-| 16.02.2026 | 939,181 |
-| 17.02.2026 | 940,895 |
-| 18.02.2026 | 948,011 |
-| 19.02.2026 | 944,836 |
-| 20.02.2026 | 766,022 |
+| 2026-02-14 | 936,389 |
+| 2026-02-15 | 948,436 |
+| 2026-02-16 | 939,181 |
+| 2026-02-17 | 940,895 |
+| 2026-02-18 | 948,011 |
+| 2026-02-19 | 944,836 |
+| 2026-02-20 | 766,022 |
 (7 rows)
-Time: 24102.303 ms (00:24.102)
+Time: 2113.326 ms (00:02.113)
 
+#### Вывод с EXPLAIN (ANALYZE) 
+Rows Removed by Filter: 3,249,358
+Planning Time: 0.230 ms
+
+JIT:
+  Functions: 54
+  Options: Inlining false, Optimization false, Expressions true, Deforming true
+  Timing: Generation 2.027 ms, Inlining 0.000 ms, Optimization 1.181 ms, Emission 38.987 ms, Total 42.195 ms
